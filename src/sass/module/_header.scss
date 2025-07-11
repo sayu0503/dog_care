@@ -1,0 +1,84 @@
+@use "global" as *;
+
+.header {
+    height: rem(75);
+    background-color: transparent;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    @include mq(md){
+        background-color: $white;
+    }
+}
+
+.header__inner {
+    display: flex;
+    height: inherit;
+    align-items: center;
+    padding-inline: rem(15);
+    justify-content: space-between;
+    @include mq(md){
+        padding-left: rem(22);
+        padding-right: rem(0);
+    }
+}
+
+.header__logo-img {
+    width: rem(132);
+    height: rem(22);
+    @include mq(md){
+        width: rem(171);
+        height: rem(30);
+    }
+}
+
+.header__nav {
+    height: inherit;
+
+}
+
+.header__lists {
+    height: inherit;
+    display: flex;
+    gap: rem(60);
+
+}
+
+.header__list {
+    height: inherit;
+    font-size: rem(16);
+    font-weight: $medium;
+    font-family: $second-font-family;
+    color: $black;
+    line-height: calc(19 / 16);
+    letter-spacing: 0.05em;
+
+}
+
+.header__link {
+    height: inherit;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    position: relative;
+    transition: 0.3s opacity;
+}
+
+@media (any-hover: hover) {
+    .header__link:hover {
+        opacity: 0.6;
+    }
+}
+
+.header__list--contact {
+    height: inherit;
+}
+
+.header__link--contact {
+    height: inherit;
+    color: $white;
+    background-color: $beige;
+    padding: rem(28) rem(24);
+
+}
+

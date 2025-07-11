@@ -10,28 +10,77 @@
   <meta name="description" content="" />
   <meta name="keywords" content="" />
   <!-- ogp -->
-  <meta property="og:title" content="" />
-  <meta property="og:type" content="" />
-  <meta property="og:url" content="" />
-  <meta property="og:image" content="" />
-  <meta property="og:site_name" content="" />
-  <meta property="og:description" content="" />
+  <meta property="og:title" content="ExciteCode" >
+  <meta property="og:type" content="website" >
+  <meta property="og:url" content="http://hogehoge.com/" >
+  <meta property="og:image" content="http://hogehoge.com/images/ogp-img.jpg" >
+  <meta property="og:site_name" content="ExciteCode" >
+  <meta property="og:description" content="ExciteCodeは、家族である愛犬のことを、とことん考えて愛犬に優しいものばかりをあつめたお店です。" >
+  <meta name="twitter:card" content="summary" >
   <!-- ファビコン -->
-  <link rel="”icon”" href="" />
+  <link rel="”icon”" href=".assets/images/favicon.icon" />
+  <link rel="apple-touch-icon" href=".assets/images/apple-touch-icon.png" >
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&family=Roboto:wght@500&display=swap"
+    rel="stylesheet">
   <!-- css -->
   <link rel="stylesheet" href="./assets/css/style.css" />
   <!-- JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script defer src="./assets/js/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
+  <script defer src="./assets/js/script.js" defer></script>
 </head>
 <body>
-  <header>
-
+  <header class="header">
+    <div class="header__inner">
+      <h1 class="header__logo">
+        <img src="./assets/images/common/logo-img.svg" alt="ExciteCode" class="header__logo-img"
+        width="132" height="22" loading="lazy" decoding="async">
+      </h1>
+      <div class="header__drawer hamburger js-hamburger u-mobile">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="header__nav u-desktop">
+        <ul class="header__lists">
+          <li class="header__list">
+            <a href="#contact" class="header__link">Concept</a>
+          </li>
+          <li class="header__list">
+            <a href="#service" class="header__link">Service</a>
+          </li>
+          <li class="header__list">
+            <a href="#access" class="header__link">Access</a>
+          </li>
+          <li class="header__list header__list--contact">
+            <a href="#contact" class="header__link header__link--contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="sp-nav js-sp-nav">
+        <div class="sp-nav__inner inner">
+          <ul class="sp-nav__lists">
+            <li class="sp-nav__list">
+              <a href="#" class="sp-nav__link">Concept</a>
+            </li>
+            <li class="sp-nav__list">
+              <a href="#" class="sp-nav__link">Service</a>
+            </li>
+            <li class="sp-nav__list">
+              <a href="#" class="sp-nav__link">Access</a>
+            </li>
+            <li class="sp-nav__list">
+              <a href="#" class="sp-nav__link sp-nav__link--contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
   <main>
-    <div class="inner">
-      <p class="test">変更のテスト</p>
-    </div>
   </main>
   <footer>
 
