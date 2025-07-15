@@ -1,0 +1,43 @@
+@use "global" as *;
+
+.contact {
+    background-image: url(../images/common/contact-img-sp.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: rem(409);
+    @include mq(md){
+    background-image: url(../images/common/contact-img.jpg);
+    min-height: rem(455);
+    }
+
+}
+
+.contact__wrap {
+    margin-top: rem(60);
+    @include mq(md){
+       margin-top: rem(43);
+    }
+
+}
+
+.contact__text {
+    font-size: rem(14);
+    font-weight: $regular;
+    font-family: $base-font-family;
+    color: $white;
+    line-height: calc(17 / 14);
+    letter-spacing: 0.05em;
+    text-align: center;
+
+}
+
+.contact__btn {
+    margin-top: rem(19);
+    display: flex;
+    justify-content: center;
+    @include mq(md){
+       margin-top: rem(20);
+    }
+}

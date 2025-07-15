@@ -59,5 +59,59 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         $("html, body").animate({ scrollTop: position }, 600, "swing");
       }
     });
+
+    //ファーストビュースライド
+  var swiper = new Swiper(".js-fv-swiper", {
+    loop: true,
+    effect: "fade",
+    speed: 3000,
+    allowTouchMove: false,
+    autoplay: {
+      delay: 3000,
+    },
   });
 
+  //ヘッダーの背景色変更
+  const header = $("#js-header");
+  const hero = $("#js-fv");
+  $(window).on("scroll", function () {
+    console.log($(this).scrollTop());
+    const heroHeight = hero.height();
+    console.log("fv height:" + heroHeight);
+    if ($(this).scrollTop() > heroHeight) {
+      header.addClass("is-white");
+    } else {
+      header.removeClass("is-white");
+    }
+  });
+
+  });
+
+
+
+//スクロールイベントでページトップボタンを表示/非表示
+$(function () {
+  $(".js-page-top").hide();
+  $(window).on("scroll", function () {
+    if ($(this).scrollTop() > 70) {
+      $(".js-page-top").fadeIn();
+    } else {
+      $(".js-page-top").fadeOut();
+    }
+    const scrollHeight = $(document).height();
+    const scrollPosition = $(window).height() + $(window).scrollTop();
+    const footHeight = $('footer').outerHeight();
+
+    if (scrollHeight - scrollPosition <= footHeight) {
+      $(".js-page-top").css({
+        "position": "absolute",
+        "bottom": 16 + footHeight,
+      });
+    } else {
+      $(".js-page-top").css({
+        "position": "fixed",
+        "bottom": "16px",
+      });
+    }
+  });
+});

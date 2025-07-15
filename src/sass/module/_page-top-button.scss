@@ -1,0 +1,37 @@
+@use "global" as *;
+
+.page-top-button {
+    position: fixed;
+    z-index: 100;
+    right: rem(15);
+    bottom: rem(15);
+    width: rem(28);
+    height: rem(28);
+    cursor: pointer;
+    @include mq(md){
+        width: rem(46);
+        height: rem(46);
+    }
+}
+
+.page-top-button::before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    background-image: url(../images/common/page-top.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: rem(28);
+    height: rem(28);
+    @include mq(md){
+        width: rem(46);
+        height: rem(46);
+        top: 20%;
+        right: 20%;
+    }
+}
+
+.js-page-top {
+    display: none;
+}

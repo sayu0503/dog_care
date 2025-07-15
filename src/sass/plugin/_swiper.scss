@@ -1,0 +1,17 @@
+@use "global" as *;
+
+.js-fv-swiper,
+.swiper-slide picture,
+.swiper-slide img {
+  height: inherit;
+  height: 100%;
+  width: 100%;
+}
+
+.swiper-slide img {
+  object-fit: cover;
+}
+
+.swiper-slide {
+  height: auto;
+}

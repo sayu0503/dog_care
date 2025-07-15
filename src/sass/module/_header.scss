@@ -1,14 +1,16 @@
 @use "global" as *;
 
+.header.is-white {
+    background-color: $white;
+}
+
 .header {
     height: rem(75);
     background-color: transparent;
     position: fixed;
     z-index: 1000;
     width: 100%;
-    @include mq(md){
-        background-color: $white;
-    }
+    transition: 0.3s;
 }
 
 .header__inner {
@@ -61,12 +63,24 @@
     display: flex;
     align-items: center;
     position: relative;
-    transition: 0.3s opacity;
+}
+
+.header__link::after {
+    background-color: $brown;
+    bottom: rem(-2);
+    content: "";
+    height: rem(2);
+    left: 0;
+    position: absolute;
+    transform: scale(0,1);
+    transform-origin: center top;
+    transition: transform .3s;
+    width: 100%;
 }
 
 @media (any-hover: hover) {
-    .header__link:hover {
-        opacity: 0.6;
+    .header__link:hover::after {
+        transform: scale(1,1);
     }
 }
 
@@ -76,9 +90,41 @@
 
 .header__link--contact {
     height: inherit;
+    display: inline-block;
+    display: flex;
+    align-items: center;
     color: $white;
     background-color: $beige;
     padding: rem(28) rem(24);
+    transition: 0.3s;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    border: rem(2) solid $beige;
+}
 
+.header__link--contact::after {
+    background: $white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
+    z-index: -1;
+
+}
+
+@media (any-hover: hover) {
+    .header__link--contact:hover {
+        color: $beige;
+    }
+    .header__link--contact:hover::after{
+        transform: scale(1, 1);
+
+    }
 }
 

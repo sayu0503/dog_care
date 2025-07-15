@@ -1,0 +1,47 @@
+@use "global" as *;
+
+.section-header {
+    text-align: left;
+    @include mq(md){
+       text-align: center;
+    }
+}
+
+.section-header--right {
+    text-align: right;
+    @include mq(md){
+       text-align: center;
+    }
+}
+
+.section-header--left {
+    text-align: left;
+}
+
+.section-header--center {
+       text-align: center;
+}
+
+.section-header__title {
+    font-size: rem(36);
+    font-weight: $medium;
+    font-family: $second-font-family;
+    color: $black;
+    line-height: calc(42 / 36);
+    letter-spacing: 0.05em;
+}
+
+.section-header__title--white {
+    color: $white;
+}
+
+.section-header__subtitle {
+    font-size: rem(12);
+    font-weight: $medium;
+    font-family: $base-font-family;
+    color: $beige;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.05em;
+    margin-top: rem(6);
+}
+

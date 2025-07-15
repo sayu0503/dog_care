@@ -6,7 +6,7 @@
   <meta name="format-detection" content="telephone=no" />
   <meta name="robots" content="noindex" />
   <!-- meta情報 -->
-  <title>CodeUps</title>
+  <title>ExciteCode</title>
   <meta name="description" content="" />
   <meta name="keywords" content="" />
   <!-- ogp -->
@@ -18,7 +18,7 @@
   <meta property="og:description" content="ExciteCodeは、家族である愛犬のことを、とことん考えて愛犬に優しいものばかりをあつめたお店です。" >
   <meta name="twitter:card" content="summary" >
   <!-- ファビコン -->
-  <link rel="”icon”" href=".assets/images/favicon.icon" />
+  <link rel="ico" href=".assets/images/favicon.icon" />
   <link rel="apple-touch-icon" href=".assets/images/apple-touch-icon.png" >
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,12 +28,14 @@
   <!-- css -->
   <link rel="stylesheet" href="./assets/css/style.css" />
   <!-- JavaScript -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
   <script defer src="./assets/js/script.js" defer></script>
 </head>
-<body>
-  <header class="header">
+<body id="top">
+
+  <header class="header" id="js-header">
     <div class="header__inner">
       <h1 class="header__logo">
         <img src="./assets/images/common/logo-img.svg" alt="ExciteCode" class="header__logo-img"
@@ -56,7 +58,7 @@
             <a href="#access" class="header__link">Access</a>
           </li>
           <li class="header__list header__list--contact">
-            <a href="#contact" class="header__link header__link--contact">Contact</a>
+            <a href="#contact" class="header__link--contact">Contact</a>
           </li>
         </ul>
       </nav>
@@ -81,10 +83,184 @@
     </div>
   </header>
   <main>
+    <!--Fv-->
+    <div class="fv" id="js-fv">
+      <div class="fv__inner">
+        <div class="swiper js-fv-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <picture>
+                <source srcset="./assets/images/common/fv_img_1.jpg" media="(min-width: 768px)" width="2880" height="1536">
+                <img src="./assets/images/common/fv_img_1-sp.jpg" alt="ブルドッグ" decoding="async" width="750" height="1334">
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source srcset="./assets/images/common/fv_img_2.jpg" media="(min-width: 768px)" width="2880"
+                  height="1536">
+                <img src="./assets/images/common/fv_img_2-sp.jpg" alt="ダックスフンド" decoding="async" width="750" height="1334">
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source srcset="./assets/images/common/fv_img_3.jpg" media="(min-width: 768px)" width="2880"
+                  height="1536">
+                <img src="./assets/images/common/fv_img_3-sp.jpg" alt="ヨークシャテリア" decoding="async" width="750" height="1334">
+              </picture>
+            </div>
+          </div>
+          <div class="fv__title-wrap">
+            <p class="fv__title">ねえ、<br>ボクたちにも<br>こだわりがあるんだよ。
+            </p>
+            <p class="fv__subtitle">大切な家族に安心安全なものを</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
-  <footer>
 
+  <!--Concept-->
+  <section class="concept l-concept">
+    <div class="concept__inner inner">
+      <div class="concept__section-header">
+        <div class="section-header">
+          <p class="section-header__title">Concept</p>
+          <h2 class="section-header__subtitle">お客様へ</h2>
+        </div>
+      </div>
+      <div class="concept__wrapper concept__wrapper--bg">
+        <div class="concept__image">
+          <img src="./assets/images/common/concept-img.jpg" alt="ドッグフードとパウチの商品画像" width="1030" height="380" decoding="async" loading="lazy">
+        </div>
+        <div class="concept__text-block">
+          <p class="concept__lead">家族である愛犬のことを、<br class="u-mobile">とことん考えて<br>
+            愛犬に優しいものばかりを<br class="u-mobile">あつめたお店です。</p>
+          <p class="concept__text">わたしたちが食べ物やスキンケアをこだわるのと同じように。<br>
+            毎日くちにするわんちゃんの食事やおもちゃ、シャンプーには無添加や天然素材のものを使用した安心安全な商品のみ取り扱っています。<br>
+            それぞれの悩みや年齢に応じた商品を多数そろえており、アレルギーや敏感肌、高齢などのご相談に応じたコーディネートも可能です。<br>
+            わんちゃんたちにも体にやさしく、健康でいつまでも元気に過ごせる時間が⻑くなるように。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Service-->
+  <section class="service l-service">
+    <div class="service__inner inner">
+      <div class="service__section-header">
+        <div class="section-header section-header--right">
+          <p class="section-header__title">Service</p>
+          <h2 class="section-header__subtitle">サービス</h2>
+        </div>
+      </div>
+      <div class="service__contents">
+        <div class="service-cards">
+          <a href="#" class="service-cards__item service-card">
+            <figure class="service-card__img">
+              <img src="./assets/images/common/service-img1.jpg" alt="無添加の国産ドッグフード" decoding="async" loading="lazy"
+                width="250" height="322">
+            </figure>
+            <div class="service-card__body">
+              <h3 class="service-card__title">無添加の国産ドックフード</h3>
+              <span class="service-card__category">FOOD</span>
+            </div>
+          </a>
+
+          
+          <a href="#" class="service-cards__item service-card">
+            <figure class="service-card__img">
+              <img src="./assets/images/common/service-img2.jpg" alt="天然由来成分ドッグ用シャンプー" decoding="async" loading="lazy"
+                width="250" height="322">
+            </figure>
+            <div class="service-card__body">
+              <h3 class="service-card__title">無添加の国産ドックフード</h3>
+              <span class="service-card__category">CARE</span>
+            </div>
+          </a>
+          <a href="#" class="service-cards__item service-card">
+            <figure class="service-card__img">
+              <img src="./assets/images/common/service-img3.jpg" alt="無添加の国産ドッグフード" decoding="async" loading="lazy"
+                width="250" height="322">
+            </figure>
+            <div class="service-card__body">
+              <h3 class="service-card__title">オーガニックコットンのおもちゃ</h3>
+              <span class="service-card__category">OTHERS</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Access-->
+  <section class="access l-access">
+    <div class="access__inner inner">
+      <div class="access__section-header">
+        <div class="section-header section-header--center">
+          <p class="section-header__title">Access</p>
+          <h2 class="section-header__subtitle">アクセス</h2>
+        </div>
+      </div>
+
+      <div class="access__info-lists">
+      <dl class="access__info-list">
+        <dt class="access__info-term">店舗名</dt>
+        <dd class="access__info-desc">ExciteCodeドックストア世田谷店</dd>
+      </dl>
+
+      <dl class="access__info-list">
+        <dt class="access__info-term">住所</dt>
+        <dd class="access__info-desc">東京都世田谷区世田谷〇丁目〇〇-〇</dd>
+      </dl>
+
+      <dl class="access__info-list">
+        <dt class="access__info-term">営業時間</dt>
+        <dd class="access__info-desc">9:00〜18:00</dd>
+      </dl>
+
+        <dl class="access__info-list">
+        <dt class="access__info-term">定休日</dt>
+        <dd class="access__info-desc">水曜日</dd>
+      </dl>
+
+        <dl class="access__info-list">
+        <dt class="access__info-term">駐車場</dt>
+        <dd class="access__info-desc">敷地内有</dd>
+      </dl>
+    </div>
+    </div>
+    <div class="access__map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51882.30004733987!2d139.59321447687313!3d35.63650795647383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f38bdd6d8d61%3A0x4ebc10d2858da879!2z5p2x5Lqs6YO95LiW55Sw6LC35Yy6!5e0!3m2!1sja!2sjp!4v1752444486281!5m2!1sja!2sjp"
+        width="560" height="315" style="border:0;" allowfullscreen="" loading="lazy" target="_blank" rel="noopener"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+  <!--Contact-->
+  <section class="contact l-contact">
+    <div class="contact__inner inner">
+      <div class="contact__section-header">
+        <div class="section-header section-header--left">
+          <p class="section-header__title section-header__title--white">Contact</p>
+          <h2 class="section-header__subtitle">お問い合わせ</h2>
+        </div>
+        <div class="contact__wrap">
+          <p class="contact__text">お気軽にご相談ください</p>
+          <div class="contact__btn">
+            <a href="contact.html" class="button"><span class="button__text">お問い合わせはコチラ</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!--フッター-->
+  <footer class="footer l-footer">
+    <div class="footer__inner inner">
+      <p class="footer__copyright">@ExciteCode all rights reserved</p>
+    </div>
   </footer>
+  <a href="#" class="page-top-button js-page-top" aria-label="ページトップに移動する"></a>
 </body>
 
 </html>
