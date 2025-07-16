@@ -50,7 +50,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     // アンカーリンクのスムーススクロール
     $('a[href^="#"]').click(function (e) {
       e.preventDefault();
-      var headerHeight = $(".js-header").outerHeight();
+      var headerHeight = $("#js-header").outerHeight();
       var href = $(this).attr("href");
       var target = href === "#" || href === "" ? $("html") : $(href);
 

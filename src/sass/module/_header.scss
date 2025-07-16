@@ -1,8 +1,11 @@
 @use "global" as *;
 
+
 .header.is-white {
     background-color: $white;
 }
+
+
 
 .header {
     height: rem(75);

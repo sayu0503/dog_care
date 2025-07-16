@@ -38,8 +38,10 @@
   <header class="header" id="js-header">
     <div class="header__inner">
       <h1 class="header__logo">
+        <a href="index.html" class="header__logo--link">
         <img src="./assets/images/common/logo-img.svg" alt="ExciteCode" class="header__logo-img"
         width="132" height="22" loading="lazy" decoding="async">
+      </a>
       </h1>
       <div class="header__drawer hamburger js-hamburger u-mobile">
         <span></span>
@@ -49,7 +51,7 @@
       <nav class="header__nav u-desktop">
         <ul class="header__lists">
           <li class="header__list">
-            <a href="#contact" class="header__link">Concept</a>
+            <a href="#concept" class="header__link">Concept</a>
           </li>
           <li class="header__list">
             <a href="#service" class="header__link">Service</a>
@@ -58,7 +60,7 @@
             <a href="#access" class="header__link">Access</a>
           </li>
           <li class="header__list header__list--contact">
-            <a href="#contact" class="header__link--contact">Contact</a>
+            <a href="contact.html" class="header__link--contact">Contact</a>
           </li>
         </ul>
       </nav>
@@ -66,16 +68,16 @@
         <div class="sp-nav__inner inner">
           <ul class="sp-nav__lists">
             <li class="sp-nav__list">
-              <a href="#" class="sp-nav__link">Concept</a>
+              <a href="#concept" class="sp-nav__link">Concept</a>
             </li>
             <li class="sp-nav__list">
-              <a href="#" class="sp-nav__link">Service</a>
+              <a href="#service" class="sp-nav__link">Service</a>
             </li>
             <li class="sp-nav__list">
-              <a href="#" class="sp-nav__link">Access</a>
+              <a href="#access" class="sp-nav__link">Access</a>
             </li>
             <li class="sp-nav__list">
-              <a href="#" class="sp-nav__link sp-nav__link--contact">Contact</a>
+              <a href="contact.html" class="sp-nav__link sp-nav__link--contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -117,10 +119,9 @@
         </div>
       </div>
     </div>
-  </main>
 
   <!--Concept-->
-  <section class="concept l-concept">
+  <section  id="concept" class="concept l-concept">
     <div class="concept__inner inner">
       <div class="concept__section-header">
         <div class="section-header">
@@ -145,7 +146,7 @@
   </section>
 
   <!--Service-->
-  <section class="service l-service">
+  <section class="service l-service" id="service">
     <div class="service__inner inner">
       <div class="service__section-header">
         <div class="section-header section-header--right">
@@ -166,7 +167,6 @@
             </div>
           </a>
 
-          
           <a href="#" class="service-cards__item service-card">
             <figure class="service-card__img">
               <img src="./assets/images/common/service-img2.jpg" alt="天然由来成分ドッグ用シャンプー" decoding="async" loading="lazy"
@@ -193,7 +193,7 @@
   </section>
 
   <!--Access-->
-  <section class="access l-access">
+  <section class="access l-access" id="access">
     <div class="access__inner inner">
       <div class="access__section-header">
         <div class="section-header section-header--center">
@@ -253,11 +253,12 @@
       </div>
     </div>
   </section>
+</main>
 
 <!--フッター-->
   <footer class="footer l-footer">
     <div class="footer__inner inner">
-      <p class="footer__copyright">@ExciteCode all rights reserved</p>
+      <p class="footer__copyright">&copy;ExciteCode all rights reserved</p>
     </div>
   </footer>
   <a href="#" class="page-top-button js-page-top" aria-label="ページトップに移動する"></a>

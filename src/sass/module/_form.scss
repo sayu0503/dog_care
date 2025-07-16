@@ -1,0 +1,100 @@
+@use "global" as *;
+
+.form__item {
+    @include mq(md){
+        grid-template-columns: 155fr 360fr;
+        align-items: center;
+        display: grid;
+        justify-content: space-between;
+    }
+}
+
+.form__item--radio {
+    @include mq(md){
+        flex-direction: column;
+        align-items: baseline;
+        grid-template-columns: 1fr;
+    }
+
+}
+
+.form__item:not(:first-child) {
+    margin-top: rem(20);
+    @include mq(md){
+       margin-top: rem(22);
+    }
+}
+
+.form__item dt {
+    font-size: rem(14);
+    font-weight: $medium;
+    font-family: $base-font-family;
+    color: $black;
+    line-height: calc(17 / 14);
+
+}
+
+.form__item dt sup{
+    color: $red;
+
+}
+
+.form__contact-btn {
+    margin-top: rem(30);
+    display: flex;
+    justify-content: center;
+}
+
+.form__radios {
+    margin-top: rem(8);
+    display: flex;
+    flex-wrap: wrap;
+    gap: rem(26);
+    row-gap: rem(16);
+    @include mq(md){
+       justify-content: center;
+       margin-top: rem(23);
+    }
+  }
+
+  .form__radio {
+    display: flex;
+    align-items: center;
+    font-size: rem(14);
+    font-weight: $regular;
+    font-family: $base-font-family;
+    color: $black;
+    line-height: calc(17 / 14);
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: $gray;
+    font-size: rem(14);
+    font-weight: $regular;
+    font-family: $base-font-family;
+    line-height:calc(17 / 14);
+
+}
+
+
+.form__textarea {
+    @include mq(md){
+        align-self: start;
+        margin-top: rem(16);
+    }
+}
+
+textarea {
+    resize: none;
+    width: rem(360);
+    height: rem(171);
+}
+
+.form__submit {
+    transition: opacity 0.3s ease;
+}
+
+.form__submit:hover {
+    background-color: $beige3;
+}

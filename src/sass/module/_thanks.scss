@@ -1,0 +1,37 @@
+@use "global" as *;
+
+.thanks {
+   padding: rem(200);
+}
+
+.thanks__text {
+    margin-top: rem(30);
+    text-align: center;
+}
+
+.thanks__button {
+    margin-top: rem(50);
+    text-align: center;
+}
+
+.thanks__btn {
+    font-size: rem(15);
+    font-weight: $regular;
+    font-family: $base-font-family;
+    color: $white;
+    line-height: calc(18 / 15);
+    background-color: $beige;
+    padding: rem(15) rem(74);
+    border-radius: rem(5);
+    transition: 0.3s ease;
+
+}
+
+    @media (any-hover: hover) {
+        .thanks__btn:hover {
+            background-color: $beige3;
+
+
+
+        }
+    }

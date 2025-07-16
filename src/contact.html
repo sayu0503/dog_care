@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="robots" content="noindex" />
+  <!-- meta情報 -->
+  <title>ExciteCode</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- ogp -->
+  <meta property="og:title" content="ExciteCode" >
+  <meta property="og:type" content="website" >
+  <meta property="og:url" content="http://hogehoge.com/" >
+  <meta property="og:image" content="http://hogehoge.com/images/ogp-img.jpg" >
+  <meta property="og:site_name" content="ExciteCode" >
+  <meta property="og:description" content="ExciteCodeは、家族である愛犬のことを、とことん考えて愛犬に優しいものばかりをあつめたお店です。" >
+  <meta name="twitter:card" content="summary" >
+  <!-- ファビコン -->
+  <link rel="ico" href=".assets/images/favicon.icon" />
+  <link rel="apple-touch-icon" href=".assets/images/apple-touch-icon.png" >
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&family=Roboto:wght@500&display=swap"
+    rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <!-- JavaScript -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
+  <script defer src="./assets/js/script.js" defer></script>
+</head>
+<body id="top">
+
+  <header class="header" id="js-header">
+    <div class="header__inner">
+      <div class="header__logo">
+        <a href="index.html" class="header__logo--link">
+        <img src="./assets/images/common/logo-img.svg" alt="ExciteCode" class="header__logo-img"
+        width="132" height="22" loading="lazy" decoding="async">
+     </a>
+      </div>
+      <div class="header__drawer hamburger js-hamburger u-mobile">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="header__nav u-desktop">
+        <ul class="header__lists">
+          <li class="header__list">
+            <a href="index.html#concept" class="header__link">Concept</a>
+          </li>
+          <li class="header__list">
+            <a href="index.html#service" class="header__link">Service</a>
+          </li>
+          <li class="header__list">
+            <a href="index.html#access" class="header__link">Access</a>
+          </li>
+          <li class="header__list header__list--contact">
+            <a href="contact.html" class="header__link--contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="sp-nav js-sp-nav">
+        <div class="sp-nav__inner inner">
+          <ul class="sp-nav__lists">
+            <li class="sp-nav__list">
+              <a href="index.html#concept" class="sp-nav__link">Concept</a>
+            </li>
+            <li class="sp-nav__list">
+              <a href="index.html#service" class="sp-nav__link">Service</a>
+            </li>
+            <li class="sp-nav__list">
+              <a href="index.html#access" class="sp-nav__link">Access</a>
+            </li>
+            <li class="sp-nav__list">
+              <a href="contact.html" class="sp-nav__link sp-nav__link--contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <!--下層Fv-->
+    <div class="page-fv" id="js-fv">
+      <div class="page-fv__inner">
+            <div class="page-fv__image">
+              <picture>
+                <source srcset="./assets/images/common/contact-img2.jpg" media="(min-width: 768px)" width="1440" height="534">
+                <img src="./assets/images/common/contact-img2-sp.jpg" alt="ゴールデンレトリバーの肉球" decoding="async" width="375" height="">
+              </picture>
+            </div>
+          <div class="page-fv__header">
+            <p class="page-fv__header__title">Contact</p>
+            <h1 class="page-fv__header__subtitle">お問い合わせ</h1>
+          </div>
+        </div>
+    </div>
+    <!--下層Contact-->
+    <div class="l-page-contact page-contact">
+        <div class="page-contact__inner inner">
+            <div class="page-contact__lead">
+                <p class="page-contact__text">
+                    当店へのお問い合わせは下記フォームより受け付けております。<br>
+                    担当者が確認後、折り返しご連絡させていただきます。
+                </p>
+            </div>
+            <div class="page-contact__content form">
+                <form action="mail.php" method="post" id="">
+                    <dl class="form__item">
+                        <dt class="form__name">
+                            お名前<sup>*</sup>
+                        </dt>
+                        <dd>
+                            <input type="text" name="お名前" required placeholder="愛犬 はなこ"/>
+                        </dd>
+                    </dl>
+                    <dl class="form__item">
+                        <dt class="form__mail">
+                            メールアドレス<sup>*</sup>
+                        </dt>
+                        <dd>
+                            <input type="email" name="メールアドレス" value="" class="validate[]" required placeholder="excitecode@dogstore.co.jp" />
+                        </dd>
+                    </dl>
+                    <dl class="form__item form__item--radio">
+                        <dt>お問い合わせの種類<sup>*</sup></dt>
+                        <dd class="form__radios">
+                            <label class="form__radio"><input type="radio" name="お問い合わせの種類" value="ドッグフード" checked required/><span>ドッグフード</span></label>
+                            <label class="form__radio"><input type="radio" name="お問い合わせの種類" value="ドッグケア" required/><span>ドッグケア</span></label>
+                            <label class="form__radio"><input type="radio" name="お問い合わせの種類" value="ドッグトイ" required/><span>ドッグトイ</span></label>
+                            <label class="form__radio"><input type="radio" name="お問い合わせの種類" value="その他" required/><span>その他</span></label>
+                        </dd>
+                    </dl>
+                    <dl class="form__item ">
+                        <dt class="form__textarea">
+                            お問い合わせ内容<sup>*</sup>
+                        </dt>
+                        <dd>
+                            <textarea name="お問い合わせ内容" placeholder="入力してください"></textarea>
+                        </dd>
+                    </dl>
+                    <div class="form__contact-btn">
+                        <input type="submit" class="form__submit" value="送信" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+  </main>
+
+<!--フッター-->
+  <footer class="footer l-page-footer">
+    <div class="footer__inner inner">
+      <p class="footer__copyright">&copy;ExciteCode all rights reserved</p>
+    </div>
+  </footer>
+  <a href="#" class="page-top-button js-page-top" aria-label="ページトップに移動する"></a>
+</body>
+
+</html>
