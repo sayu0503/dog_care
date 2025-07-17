@@ -114,4 +114,19 @@ $(function () {
       });
     }
   });
+
+const op =gsap.timeline();
+
+
+// //loader
+gsap.to('.loader__logo',{
+  opacity: 1,
+  duration: 2,
 });
+
+gsap.to('.loader',{
+  opacity: 0,
+  duration: 2,
+});
+});
+

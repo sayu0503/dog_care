@@ -5,8 +5,6 @@
     background-color: $white;
 }
 
-
-
 .header {
     height: rem(75);
     background-color: transparent;
@@ -39,14 +37,12 @@
 
 .header__nav {
     height: inherit;
-
 }
 
 .header__lists {
     height: inherit;
     display: flex;
     gap: rem(60);
-
 }
 
 .header__list {
@@ -57,7 +53,6 @@
     color: $black;
     line-height: calc(19 / 16);
     letter-spacing: 0.05em;
-
 }
 
 .header__link {

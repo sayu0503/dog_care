@@ -1,0 +1,22 @@
+@use "global" as *;
+
+.loader {
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    background-color: $white;
+    display: grid;
+    place-content: center;
+}
+
+.loader__logo {
+    display: flex;
+    align-items: center;
+    gap: rem(5);
+    opacity: 0;
+}
+
+.loader__logo img {
+    aspect-ratio: 1;
+    width: rem(171);
+}

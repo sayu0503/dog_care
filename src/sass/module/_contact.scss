@@ -7,19 +7,19 @@
     background-position: center;
     width: 100%;
     min-height: rem(409);
-    @include mq(md){
-    background-image: url(../images/common/contact-img.jpg);
-    min-height: rem(455);
-    }
 
+    @include mq(md) {
+        background-image: url(../images/common/contact-img.jpg);
+        min-height: rem(455);
+    }
 }
 
 .contact__wrap {
     margin-top: rem(60);
-    @include mq(md){
-       margin-top: rem(43);
-    }
 
+    @include mq(md) {
+        margin-top: rem(43);
+    }
 }
 
 .contact__text {
@@ -30,14 +30,14 @@
     line-height: calc(17 / 14);
     letter-spacing: 0.05em;
     text-align: center;
-
 }
 
 .contact__btn {
     margin-top: rem(19);
     display: flex;
     justify-content: center;
-    @include mq(md){
-       margin-top: rem(20);
+
+    @include mq(md) {
+        margin-top: rem(20);
     }
 }

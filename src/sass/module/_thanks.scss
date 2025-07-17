@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .thanks {
-   padding: rem(200);
+    padding: rem(200);
 }
 
 .thanks__text {
@@ -27,11 +27,11 @@
 
 }
 
-    @media (any-hover: hover) {
-        .thanks__btn:hover {
-            background-color: $beige3;
+@media (any-hover: hover) {
+    .thanks__btn:hover {
+        background-color: $beige3;
 
 
 
-        }
     }
+}

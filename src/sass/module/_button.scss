@@ -1,6 +1,5 @@
 @use "global" as *;
 
-
 .button {
     width: rem(300);
     font-size: rem(15);
@@ -21,7 +20,8 @@
     justify-content: center;
     text-align: center;
     box-sizing: border-box;
-    @include mq(md){
+
+    @include mq(md) {
         max-width: rem(340);
         padding-block: rem(27);
     }
@@ -34,13 +34,15 @@
     transition: letter-spacing 0.3s ease;
 
 }
+
 @media (any-hover: hover) {
     .button:hover .button__text {
         letter-spacing: 0.15em;
         white-space: nowrap;
         text-align: center;
-        @include mq(md){
-        letter-spacing: 0.22em;
+
+        @include mq(md) {
+            letter-spacing: 0.22em;
         }
     }
 }
@@ -56,6 +58,4 @@
     top: 50%;
     transform: translateY(-50%);
     right: rem(22);
-
 }
-

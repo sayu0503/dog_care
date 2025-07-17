@@ -1,17 +1,15 @@
 @use "global" as *;
 
-
 .page-contact__inner.inner {
-    @include mq(md){
+    @include mq(md) {
         max-width: rem(850);
     }
-
 }
 
 .page-contact__lead {
-    @include mq(md){
+    @include mq(md) {
         text-align: center;
-	    display: block;
+        display: block;
     }
 }
 
@@ -22,11 +20,12 @@
     color: $black;
     line-height: calc(26 / 14);
     letter-spacing: 0.05em;
-    @include mq(md){
-       font-size: rem(15);
-       line-height: calc(28 / 15);
-       text-align: left;
-	display: inline-block;
+
+    @include mq(md) {
+        font-size: rem(15);
+        line-height: calc(28 / 15);
+        text-align: left;
+        display: inline-block;
 
     }
 }
@@ -36,8 +35,9 @@
     border-top-left-radius: rem(20);
     padding: rem(40) rem(20);
     margin-top: rem(40);
-    @include mq(md){
-       padding: rem(60) rem(150);
-       margin-top: rem(60);
+
+    @include mq(md) {
+        padding: rem(60) rem(150);
+        margin-top: rem(60);
     }
 }

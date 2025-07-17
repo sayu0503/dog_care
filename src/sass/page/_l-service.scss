@@ -2,7 +2,8 @@
 
 .l-service {
     margin-top: rem(100);
-    @include mq(md){
-       margin-top: rem(180);
+
+    @include mq(md) {
+        margin-top: rem(180);
     }
 }

@@ -27,7 +27,6 @@
     font-weight: $medium;
     line-height: calc(40 / 28);
     color: $black;
-
     @include mq(md) {
         font-size: rem(38);
         line-height: calc(58 / 38);

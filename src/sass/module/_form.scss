@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .form__item {
-    @include mq(md){
+    @include mq(md) {
         grid-template-columns: 155fr 360fr;
         align-items: center;
         display: grid;
@@ -10,18 +10,17 @@
 }
 
 .form__item--radio {
-    @include mq(md){
+    @include mq(md) {
         flex-direction: column;
         align-items: baseline;
         grid-template-columns: 1fr;
     }
-
 }
 
 .form__item:not(:first-child) {
     margin-top: rem(20);
-    @include mq(md){
-       margin-top: rem(22);
+    @include mq(md) {
+        margin-top: rem(22);
     }
 }
 
@@ -31,12 +30,10 @@
     font-family: $base-font-family;
     color: $black;
     line-height: calc(17 / 14);
-
 }
 
-.form__item dt sup{
+.form__item dt sup {
     color: $red;
-
 }
 
 .form__contact-btn {
@@ -51,13 +48,14 @@
     flex-wrap: wrap;
     gap: rem(26);
     row-gap: rem(16);
-    @include mq(md){
-       justify-content: center;
-       margin-top: rem(23);
-    }
-  }
 
-  .form__radio {
+    @include mq(md) {
+        justify-content: center;
+        margin-top: rem(23);
+    }
+}
+
+.form__radio {
     display: flex;
     align-items: center;
     font-size: rem(14);
@@ -65,21 +63,20 @@
     font-family: $base-font-family;
     color: $black;
     line-height: calc(17 / 14);
-  }
+}
 
-  input::placeholder,
-  textarea::placeholder {
+input::placeholder,
+textarea::placeholder {
     color: $gray;
     font-size: rem(14);
     font-weight: $regular;
     font-family: $base-font-family;
-    line-height:calc(17 / 14);
-
+    line-height: calc(17 / 14);
 }
 
 
 .form__textarea {
-    @include mq(md){
+    @include mq(md) {
         align-self: start;
         margin-top: rem(16);
     }

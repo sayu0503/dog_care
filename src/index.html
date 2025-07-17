@@ -5,21 +5,21 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no" />
   <meta name="robots" content="noindex" />
-  <!-- meta情報 -->
-  <title>ExciteCode</title>
-  <meta name="description" content="" />
-  <meta name="keywords" content="" />
-  <!-- ogp -->
-  <meta property="og:title" content="ExciteCode" >
-  <meta property="og:type" content="website" >
-  <meta property="og:url" content="http://hogehoge.com/" >
-  <meta property="og:image" content="http://hogehoge.com/images/ogp-img.jpg" >
-  <meta property="og:site_name" content="ExciteCode" >
-  <meta property="og:description" content="ExciteCodeは、家族である愛犬のことを、とことん考えて愛犬に優しいものばかりをあつめたお店です。" >
-  <meta name="twitter:card" content="summary" >
-  <!-- ファビコン -->
-  <link rel="ico" href=".assets/images/favicon.icon" />
-  <link rel="apple-touch-icon" href=".assets/images/apple-touch-icon.png" >
+   <!-- meta情報 -->
+   <title>ExciteCode</title>
+   <meta name="description" content="ExciteCodeは、家族である愛犬のことを、とことん考えて愛犬に優しいものばかりをあつめたお店です。" />
+   <meta name="keywords" content="ExciteCode,ドラッグストア,ドッグケア" />
+   <!-- ogp -->
+   <meta property="og:title" content="ExciteCode" >
+   <meta property="og:type" content="website" >
+   <meta property="og:url" content="http://dogcare.com/" >
+   <meta property="og:image" content="http://dogcare.com/images/ogp-img.jpg" >
+   <meta property="og:site_name" content="ExciteCode" >
+   <meta property="og:description" content="ExciteCodeは、家族である愛犬のことを、とことん考えて愛犬に優しいものばかりをあつめたお店です。" >
+   <meta name="twitter:card" content="summary" >
+   <!-- ファビコン -->
+   <link rel="ico" href=".assets/images/favicon.ico" />
+   <link rel="apple-touch-icon" href=".assets/images/apple-touch-icon.png" sizes="180x180">
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,12 +28,21 @@
   <!-- css -->
   <link rel="stylesheet" href="./assets/css/style.css" />
   <!-- JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
   <script defer src="./assets/js/script.js" defer></script>
 </head>
 <body id="top">
+  <!--loader-->
+  <div class="loader">
+      <div class="loader__logo">
+        <img src="./assets/images/common/logo-img.svg" alt="ExciteCode" class="loader__title"
+        width="132" height="22" loading="lazy" decoding="async">
+      </div>
+  </div>
 
   <header class="header" id="js-header">
     <div class="header__inner">

@@ -3,9 +3,10 @@
 .l-page-footer {
     margin-top: rem(60);
     padding-block: rem(22);
-    @include mq(md){
-       margin-top: rem(80);
-       padding-block: rem(32);
+
+    @include mq(md) {
+        margin-top: rem(80);
+        padding-block: rem(32);
 
     }
 }

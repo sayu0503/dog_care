@@ -2,10 +2,9 @@
 
 .page-fv {
     position: relative;
-
 }
 
-.page-fv__image img{
+.page-fv__image img {
     min-height: rem(445);
 
     @include mq(md) {
@@ -38,7 +37,8 @@
     color: $black;
     line-height: calc(40 / 34);
     letter-spacing: 0.05em;
-    @include mq(md){
+
+    @include mq(md) {
         font-size: rem(38);
         line-height: calc(45 / 38);
     }
@@ -51,10 +51,9 @@
     color: $black;
     line-height: calc(14 / 12);
     letter-spacing: 0.05em;
-    @include mq(md){
+
+    @include mq(md) {
         font-size: rem(14);
         line-height: calc(17 / 14);
     }
-
 }
-

@@ -1,12 +1,8 @@
 @use "global" as *;
 
-.access {
-
-}
-
 .access__inner {
-    @include mq(md){
-       width: rem(800);
+    @include mq(md) {
+        width: rem(850);
     }
 }
 
@@ -14,22 +10,20 @@
     margin-top: rem(40);
     display: grid;
     row-gap: rem(14);
-
 }
 
 .access__info-list {
     display: grid;
     row-gap: rem(14);
 
-  @include mq(md) {
+    @include mq(md) {
         display: grid;
         grid-template-columns: rem(280) 1fr;
         row-gap: rem(20);
         column-gap: rem(24);
-        border-bottom: 1px solid $gray;
+        border-bottom: rem(1) solid $gray;
         padding-bottom: rem(16);
-  }
-
+    }
 }
 
 .access__info-term,
@@ -40,20 +34,17 @@
     color: $black;
     line-height: calc(18 / 15);
     letter-spacing: 0.05em;
-    @include mq(md){
-       
-    }
 
 }
 
 .access__info-desc {
-    border-bottom: 1px solid $gray;
+    border-bottom: solid $gray;
     padding-bottom: rem(16);
-    @include mq(md){
+
+    @include mq(md) {
         border-bottom: none;
         padding-bottom: rem(0);
     }
-
 }
 
 .access__map {
@@ -66,7 +57,6 @@
         height: rem(420);
 
     }
-
 }
 
 .access__map iframe {
@@ -78,4 +68,3 @@
     border: 0;
 
 }
-

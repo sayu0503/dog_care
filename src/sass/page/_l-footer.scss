@@ -2,7 +2,8 @@
 
 .l-footer {
     padding-block: rem(22);
-    @include mq(md){
-       padding-block: rem(32);
+
+    @include mq(md) {
+        padding-block: rem(32);
     }
 }

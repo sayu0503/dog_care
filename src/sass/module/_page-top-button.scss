@@ -8,7 +8,8 @@
     width: rem(28);
     height: rem(28);
     cursor: pointer;
-    @include mq(md){
+
+    @include mq(md) {
         width: rem(46);
         height: rem(46);
     }
@@ -24,7 +25,8 @@
     background-size: cover;
     width: rem(28);
     height: rem(28);
-    @include mq(md){
+
+    @include mq(md) {
         width: rem(46);
         height: rem(46);
         top: 20%;

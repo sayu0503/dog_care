@@ -2,48 +2,45 @@
 
 .service {
     background-image: linear-gradient(to bottom, $white 0px, $white 25px, transparent 25px),
-    linear-gradient(90deg, $white2 48%, transparent 48%);
-    padding-bottom: rem(40);
-    @include mq(md){
-    background-image: initial;
-    padding-bottom: rem(0);
+        linear-gradient(90deg, $white2 48%, transparent 48%);
+        padding-bottom: rem(40);
+
+    @include mq(md) {
+        background-image: initial;
+        padding-bottom: rem(0);
     }
-
-
 }
 
 .service__contents {
     margin-top: rem(40);
     padding-inline: rem(43);
-    @include mq(md){
+
+    @include mq(md) {
         padding-inline: rem(0);
     }
-
 }
 
 .service-cards {
     display: grid;
     gap: rem(30);
-    grid-template-columns: repeat(1,1fr);
-    @include mq(md){
-    grid-template-columns: repeat(3,1fr);
-       gap: rem(50);
-    }
+    grid-template-columns: repeat(1, 1fr);
 
+    @include mq(md) {
+        grid-template-columns: repeat(3, 1fr);
+        gap: rem(50);
+    }
 }
 
 .service-card {
     display: block;
     border-top-left-radius: rem(20);
-    box-shadow: rem(3) rem(3) rem(8) rgba(0,0,0,0.06);
+    box-shadow: rem(3) rem(3) rem(8) rgba(0, 0, 0, 0.06);
     transition: opacity 0.4s;
 }
 
 .service-card__img {
     overflow: hidden;
     border-top-left-radius: rem(20);
-
-
 }
 
 .service-card__img img {
@@ -53,13 +50,14 @@
     height: 100%;
     object-fit: cover;
     transition: transform 0.5s ease, opacity 0.5s ease;
-    @include mq(md){
-       aspect-ratio: 310 / 400;
+
+    @include mq(md) {
+        aspect-ratio: 310 / 400;
     }
 }
 
 @media (any-hover: hover) {
-    .service-card:hover .service-card__img img{
+    .service-card:hover .service-card__img img {
         transform: scale(1.08);
         opacity: 0.7;
     }
@@ -73,8 +71,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    @include mq(md){
-       padding-block: rem(16) rem(10);
+
+    @include mq(md) {
+        padding-block: rem(16) rem(10);
     }
 
 }
@@ -88,11 +87,11 @@
     letter-spacing: 0.05em;
     text-align: center;
     margin-bottom: auto;
-    @include mq(md){
+
+    @include mq(md) {
         font-size: rem(16);
         line-height: calc(19 / 14);
     }
-
 }
 
 .service-card__category {
@@ -108,4 +107,3 @@
     align-self: flex-end;
     margin-top: rem(13);
 }
-

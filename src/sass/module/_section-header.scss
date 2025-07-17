@@ -2,15 +2,17 @@
 
 .section-header {
     text-align: left;
-    @include mq(md){
-       text-align: center;
+
+    @include mq(md) {
+        text-align: center;
     }
 }
 
 .section-header--right {
     text-align: right;
-    @include mq(md){
-       text-align: center;
+
+    @include mq(md) {
+        text-align: center;
     }
 }
 
@@ -19,7 +21,7 @@
 }
 
 .section-header--center {
-       text-align: center;
+    text-align: center;
 }
 
 .section-header__title {
@@ -47,5 +49,4 @@
 
 .section-header__subtitle--black {
     color: $black;
-
 }
