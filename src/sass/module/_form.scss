@@ -2,7 +2,7 @@
 
 .form__item {
     @include mq(md) {
-        grid-template-columns: 155fr 360fr;
+        grid-template-columns: 165fr 350fr;
         align-items: center;
         display: grid;
         justify-content: space-between;
@@ -20,7 +20,7 @@
 .form__item:not(:first-child) {
     margin-top: rem(20);
     @include mq(md) {
-        margin-top: rem(22);
+        margin-top: rem(23);
     }
 }
 
@@ -47,11 +47,13 @@
     display: flex;
     flex-wrap: wrap;
     gap: rem(26);
-    row-gap: rem(16);
+    row-gap: rem(23);
+    margin-left: rem(13);
 
     @include mq(md) {
         justify-content: center;
         margin-top: rem(23);
+        margin-left: rem(-57);
     }
 }
 
@@ -72,6 +74,8 @@ textarea::placeholder {
     font-weight: $regular;
     font-family: $base-font-family;
     line-height: calc(17 / 14);
+    padding-block: rem(6) rem(7);
+    padding-left: rem(5);
 }
 
 
@@ -90,6 +94,7 @@ textarea {
 
 .form__submit {
     transition: opacity 0.3s ease;
+    font-size: rem(15);
 }
 
 .form__submit:hover {

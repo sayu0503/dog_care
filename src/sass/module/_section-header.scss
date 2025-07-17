@@ -16,12 +16,17 @@
     }
 }
 
-.section-header--left {
-    text-align: left;
-}
 
 .section-header--center {
     text-align: center;
+}
+
+
+.section-header--left {
+    text-align: left;
+    @include mq(md){
+       text-align: left;
+    }
 }
 
 .section-header__title {

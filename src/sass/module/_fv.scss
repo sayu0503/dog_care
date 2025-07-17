@@ -16,9 +16,12 @@
     position: absolute;
     z-index: 10;
     top: 50%;
-    left: 56%;
+    left: 59%;
     width: 100%;
     transform: translate(-50%, -50%);
+    @include mq(md){
+       left: 58%;
+    }
 }
 
 .fv__title {

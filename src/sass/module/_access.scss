@@ -10,16 +10,20 @@
     margin-top: rem(40);
     display: grid;
     row-gap: rem(14);
+    @include mq(md){
+        margin-top: rem(48);
+        row-gap: rem(19);
+    }
 }
 
 .access__info-list {
     display: grid;
-    row-gap: rem(14);
+    row-gap: rem(16);
 
     @include mq(md) {
         display: grid;
-        grid-template-columns: rem(280) 1fr;
-        row-gap: rem(20);
+        grid-template-columns: rem(255) 1fr;
+        row-gap: rem(16);
         column-gap: rem(24);
         border-bottom: rem(1) solid $gray;
         padding-bottom: rem(16);
@@ -39,7 +43,7 @@
 
 .access__info-desc {
     border-bottom: solid $gray;
-    padding-bottom: rem(16);
+    padding-bottom: rem(20);
 
     @include mq(md) {
         border-bottom: none;

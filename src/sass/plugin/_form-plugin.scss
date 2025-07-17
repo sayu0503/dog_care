@@ -10,9 +10,9 @@ $border-cr: #C0AC91; //inputのhover or focus時の色
 $back-cr: #fff;//input（テキスト系）の背景色
 
 /*サイズ等の指定*/
-$fz: rem(16);//入力するときのfont-size
-$padding-und: rem(10);//paddingの指定（上下） inputの内側の余白で使う
-$padding-lnr: rem(10);//paddingの指定（左右） inputの内側の余白で使う
+$fz: rem(14);//入力するときのfont-size
+$padding-und: rem(6);//paddingの指定（上下） inputの内側の余白で使う
+$padding-lnr: rem(7);//paddingの指定（左右） inputの内側の余白で使う
 $border-r: rem(6);//border-radius（テキスト系）
 
 /*ボタン系の指定*/
@@ -62,7 +62,7 @@ textarea {
 	/*↓カスタム */
     margin-top: rem(7);
 	font-size: $fz;
-	padding: $padding-und $padding-lnr;
+	padding: rem(6) rem(8) rem(9);
 	width: 100%;
 	background: $back-cr;
 	// border: 1px solid $border-cr-default;
@@ -103,6 +103,10 @@ button,
 	transition: 0.3s ease;
 	border-radius: $border-r-btn;
 	line-height: 1;
+	font-size: rem(15);
+	@include mq(md){
+		font-size: rem(16);
+    }
 }
 
 [type="radio"] {
@@ -120,7 +124,7 @@ button,
 		&::before {
 			position: absolute;
 			content: "";
-			top: 50%;
+			top: 60%;
 			left: 0;
 			transform: translateY(-50%);
 			background: $radio-bg-cr;
@@ -141,7 +145,7 @@ button,
 		&::after {
 			position: absolute;
 			content: "";
-			top: 50%;
+			top: 60%;
 			left: calc(($radio-size - $radio-size-inner) / 2);
 			transform: translateY(-50%);
 			background: $radio-bg-cr-inner;
@@ -242,7 +246,7 @@ select {
 	// background-position: right 12px center;
 	// background-repeat: no-repeat;
 	&:focus {
-		border-color: 1px solid $border-cr;
+		border: 1px solid $border-cr;
 	}
 }
 

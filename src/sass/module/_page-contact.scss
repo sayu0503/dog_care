@@ -33,11 +33,11 @@
 .page-contact__content {
     background-color: $white2;
     border-top-left-radius: rem(20);
-    padding: rem(40) rem(20);
+    padding: rem(37) rem(20);
     margin-top: rem(40);
 
     @include mq(md) {
-        padding: rem(60) rem(150);
+        padding: rem(55) rem(150);
         margin-top: rem(60);
     }
 }

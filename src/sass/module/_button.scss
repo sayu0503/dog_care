@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .button {
-    width: rem(300);
+    width: rem(260);
     font-size: rem(15);
     font-weight: $regular;
     font-family: $base-font-family;
@@ -11,7 +11,6 @@
     border: rem(1) solid $white;
     border-radius: rem(6);
     position: relative;
-    max-width: rem(260);
     display: block;
     padding-block: rem(18) rem(22);
     padding-inline: rem(30) rem(23);
@@ -22,8 +21,12 @@
     box-sizing: border-box;
 
     @include mq(md) {
-        max-width: rem(340);
+        width: rem(340);
         padding-block: rem(27);
+        font-size: rem(16);
+        line-height: calc(19 / 16);
+        padding-inline: rem(20) rem(10);
+
     }
 
 }

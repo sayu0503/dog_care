@@ -36,7 +36,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       $(".header").removeClass("is-open");
       $("body").css("overflow", "auto"); // スクロールを有効に戻す
     });
-  
+
     // ウィンドウサイズが768px以上になったらメニューを強制的に閉じる
     $(window).resize(function () {
       if (window.matchMedia("(min-width: 768px)").matches) {
@@ -115,18 +115,31 @@ $(function () {
     }
   });
 
-const op =gsap.timeline();
 
+  const isFirstVisit = sessionStorage.getItem("visited");
 
-// //loader
-gsap.to('.loader__logo',{
-  opacity: 1,
-  duration: 2,
-});
+  if (!isFirstVisit) {
+    // 初回訪問時だけローディング表示
+    const op = gsap.timeline();
 
-gsap.to('.loader',{
-  opacity: 0,
-  duration: 2,
-});
+    op.to(".loader__logo", {
+      opacity: 1,
+      duration: 2,
+    });
+
+    op.to(".loader", {
+      opacity: 0,
+      duration: 2,
+      onComplete: function () {
+        document.querySelector(".loader").style.display = "none";
+      },
+    });
+
+    // フラグを保存して、次回からローディング非表示に
+    sessionStorage.setItem("visited", "true");
+  } else {
+    // 2回目以降：ローダー即非表示
+    $(".loader").hide();
+  }
 });
 

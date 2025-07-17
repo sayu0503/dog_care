@@ -13,7 +13,7 @@
 
 .service__contents {
     margin-top: rem(40);
-    padding-inline: rem(43);
+    padding-inline: rem(47);
 
     @include mq(md) {
         padding-inline: rem(0);
@@ -27,7 +27,7 @@
 
     @include mq(md) {
         grid-template-columns: repeat(3, 1fr);
-        gap: rem(50);
+        gap: rem(45);
     }
 }
 
@@ -74,6 +74,7 @@
 
     @include mq(md) {
         padding-block: rem(16) rem(10);
+        padding-inline: rem(14);
     }
 
 }
@@ -106,4 +107,7 @@
     padding: rem(2) rem(12);
     align-self: flex-end;
     margin-top: rem(13);
+    @include mq(md){
+       margin-top: rem(18);
+    }
 }

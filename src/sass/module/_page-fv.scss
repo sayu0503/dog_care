@@ -15,18 +15,14 @@
 .page-fv__header {
     position: absolute;
     z-index: 10;
-    top: 50%;
-    left: 23%;
-    width: 100%;
+    top: 53%;
+    left: 21%;
     transform: translate(-50%, -50%);
     text-align: center;
-    margin-inline: auto;
-    width: 100%;
 
     @include mq(md) {
-        margin-inline: auto;
-        top: 50%;
-        left: 13%;
+        top: 57%;
+        left: 13.5%;
     }
 }
 
@@ -51,6 +47,7 @@
     color: $black;
     line-height: calc(14 / 12);
     letter-spacing: 0.05em;
+    text-align: left;
 
     @include mq(md) {
         font-size: rem(14);
