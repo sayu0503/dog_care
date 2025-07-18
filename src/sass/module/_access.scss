@@ -42,7 +42,7 @@
 }
 
 .access__info-desc {
-    border-bottom: solid $gray;
+    border-bottom: rem(1) solid $gray;
     padding-bottom: rem(20);
 
     @include mq(md) {
